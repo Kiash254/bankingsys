@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div  class="card-body">
+    <form method='POST' >
+      {%csrf_token%}
+      <p> Are you sure tou want to delete"{{task}}"</p>
+      <input class="button" type='submit' value='delete'/>
+  
+  </form>
+  
+  </div>
+
+
+  {% endblock %}
